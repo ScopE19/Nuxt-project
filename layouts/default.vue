@@ -39,7 +39,7 @@ const switch_burger = () => {burger.value = !burger.value}
          'max-[480px]:hidden': !burger}">
             <NuxtLink to = "/" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Home</NuxtLink>
             <div class="group my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-white max-[480px]:w-full max-[480px]:border-t-2 max-[480px]:text-center font-bold relative">Labs
-              <div class=" opacity-0 group-hover:flex group-hover:opacity-100 flex-col top-full bg-white text-black w-56 text-center max-[480px]:relative max-[480px]:w-full max-[480px]:bg-red-100 absolute border-2">
+              <div class=" opacity-0 group-hover:flex group-hover:opacity-100 flex-col top-full bg-white text-black w-56 text-center max-[480px]:opacity-100 max-[480px]:flex max-[480px]:relative max-[480px]:w-full max-[480px]:bg-red-100 absolute border-2">
                 <NuxtLink to = "/Lab3" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab3</NuxtLink>
                 <NuxtLink to = "/Lab4" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab4</NuxtLink>
                 <NuxtLink to = "/Lab5" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab5</NuxtLink>
