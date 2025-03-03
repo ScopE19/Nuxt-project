@@ -38,12 +38,12 @@ const switch_burger = () => {burger.value = !burger.value}
         <nav :class = "{'basis-1/2 flex flex-row items-center justify-end px-4 gap-4': !burger || burger, 'max-[480px]:basis-auto max-[480px]:absolute max-[480px]:top-full max-[480px]:w-full max-[480px]:justify-center max-[480px]:flex-col max-[480px]:gap-0 max-[480px]:bg-white max-[480px]:px-0': burger,
          'max-[480px]:hidden': !burger}">
             <NuxtLink to = "/" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Home</NuxtLink>
-            <div class="my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-white max-[480px]:w-full max-[480px]:border-t-2 max-[480px]:text-center font-bold">Labs
-              <div class="flex flex-col absolute top-full bg-white text-black w-56 text-center max-[480px]:relative max-[480px]:w-full max-[480px]:bg-red-100">
-                <NuxtLink to = "/Lab3" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Lab3</NuxtLink>
-                <NuxtLink to = "/Lab4" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Lab4</NuxtLink>
-                <NuxtLink to = "/Lab5" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Lab5</NuxtLink>
-                <NuxtLink to = "/Lab6" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Lab6</NuxtLink>
+            <div class="group my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-white max-[480px]:w-full max-[480px]:border-t-2 max-[480px]:text-center font-bold relative">Labs
+              <div class=" opacity-0 group-hover:flex group-hover:opacity-100 flex-col top-full bg-white text-black w-56 text-center max-[480px]:relative max-[480px]:w-full max-[480px]:bg-red-100 absolute border-2">
+                <NuxtLink to = "/Lab3" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab3</NuxtLink>
+                <NuxtLink to = "/Lab4" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab4</NuxtLink>
+                <NuxtLink to = "/Lab5" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab5</NuxtLink>
+                <NuxtLink to = "/Lab6" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab6</NuxtLink>
               </div>
             </div>
             <NuxtLink to = "/login" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">LogIn</NuxtLink>
