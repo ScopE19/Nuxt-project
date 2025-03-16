@@ -22,7 +22,7 @@ const switch_burger = () => {burger.value = !burger.value}
 
 </script>
 
-<template>
+<template class="bg-red-500">
   <!-- Google Tag Manager (noscript) -->
   <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVVMGLDC"
@@ -35,11 +35,11 @@ const switch_burger = () => {burger.value = !burger.value}
         </div>
         <div class = "basis-1/4 max-sm:basis-auto">
         </div>
-        <nav :class = "{'basis-1/2 flex flex-row items-center justify-end px-4 gap-4': !burger || burger, 'max-[480px]:basis-auto max-[480px]:absolute max-[480px]:top-full max-[480px]:w-full max-[480px]:justify-center max-[480px]:flex-col max-[480px]:gap-0 max-[480px]:bg-white max-[480px]:px-0': burger,
+        <nav :class = "{'basis-1/2 flex flex-row items-center justify-end px-4 z-100 gap-4': !burger || burger, 'max-[480px]:basis-auto max-[480px]:absolute max-[480px]:top-full max-[480px]:w-full max-[480px]:justify-center max-[480px]:flex-col max-[480px]:gap-0 max-[480px]:bg-white max-[480px]:px-0': burger,
          'max-[480px]:hidden': !burger}">
             <NuxtLink to = "/" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center">Home</NuxtLink>
-            <div class="group my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-white max-[480px]:w-full max-[480px]:border-t-2 max-[480px]:text-center font-bold relative">Labs
-              <div class=" opacity-0 group-hover:flex group-hover:opacity-100 flex-col top-full bg-white text-black w-56 text-center max-[480px]:opacity-100 max-[480px]:flex max-[480px]:relative max-[480px]:w-full max-[480px]:bg-red-100 absolute border-2">
+            <div class="group my-auto p-2 border-b-2 border-black hover:bg-gray-500 hover:text-white  max-[480px]:w-full max-[480px]:border-t-2 max-[480px]:text-center font-bold relative">Labs
+              <div class="opacity-0 group-hover:flex group-hover:opacity-100 flex-col top-full bg-white text-black w-56 text-center max-[480px]:opacity-100 max-[480px]:flex max-[480px]:relative max-[480px]:w-full  max-[480px]:z-100 absolute border-2 ">
                 <NuxtLink to = "/Lab3" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab3</NuxtLink>
                 <NuxtLink to = "/Lab4" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab4</NuxtLink>
                 <NuxtLink to = "/Lab5" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab5</NuxtLink>
@@ -60,7 +60,7 @@ const switch_burger = () => {burger.value = !burger.value}
           <span class="h-[3px] w-full bg-black rotate-135 relative bottom-3"></span>
         </div>
     </header>
-    <main class="p-5 flex bg-green-100 h-screen">
+    <main class="bg-green-100 h-auto">
         <slot /> 
     </main>
     <footer class = "flex flex-row w-full bg-green-400 border-t-2 border-gray-400 items-center justify-center px-4 py-2 gap-4">

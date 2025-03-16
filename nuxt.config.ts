@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
+import vue from '@vitejs/plugin-vue'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -7,7 +8,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [
-      tailwindcss(),
+      tailwindcss(), vue(),
     ],
   },
   app: {
