@@ -2,9 +2,9 @@
     <p class=" scale-200 mb-10 flex max-[480px]:scale-100 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255)] font-bold flex-row">Random videos from my liked playlist</p>
     <div class="flex flex-col items-center space-y-4">
       <div class="flex space-x-4">
-        <label v-for="(video, index) in videos" :key="index" class="flex items-center space-x-2">
+        <label v-for="(video, index) in videos" :key="index" class="flex  items-center space-x-2">
           <input type="radio" v-model="selectedVideo" :value="video.url" class="hidden peer">
-          <span class="cursor-pointer px-4 py-2 rounded-md bg-gray-300 peer-checked:bg-blue-500 peer-checked:text-white">
+          <span class=" px-4 py-2 rounded-md bg-gray-300 peer-checked:bg-blue-500 peer-checked:text-white">
             {{ video.title }}
           </span>
         </label>
