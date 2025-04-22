@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       tailwindcss(),
   ]},
   auth: {
-    baseURL: process.env.NUXT_AUTH_ORIGIN
+    baseURL: process.env.AUTH_ORIGIN
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
