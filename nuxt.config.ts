@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: ['@sidebase/nuxt-auth'],
+  nitro: {
+    preset: 'netlify'
+  },
   vite: {
     plugins: [
       tailwindcss(),
