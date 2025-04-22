@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       tailwindcss(),
   ]},
   auth: {
-    
+    baseURL: process.env.NUXT_AUTH_ORIGIN
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
@@ -21,5 +21,6 @@ export default defineNuxtConfig({
     public: {
       GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
       GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
-    }}
+    }},
+    
 })
