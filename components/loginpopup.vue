@@ -42,7 +42,7 @@
   const showPopup = ref(false)
   
   function confirmSignIn() {
-    signIn('github', { callbackUrl: '/' })
+    signIn('github', { callbackUrl: '/login' })
     showPopup.value = false
   }
   </script>
