@@ -42,7 +42,7 @@
   const showPopup = ref(false)
   
   function confirmSignIn() {
-    signIn('github', { callbackUrl: '/' })
+    signIn('github', { callbackUrl: '/https://scope191337.netlify.app/' })
     showPopup.value = false
   }
   </script>
