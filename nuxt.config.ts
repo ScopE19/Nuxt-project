@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   ]},
   auth: {
     globalAppMiddleware: false,
+    baseURL: process.env.BASE_URL,
   },
 
   runtimeConfig: {
