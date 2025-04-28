@@ -8,7 +8,6 @@
 definePageMeta({
     auth: {
         unauthenticatedOnly: false,
-        navigateTo: '/Lab6',
     },
 })
 </script>
