@@ -6,7 +6,7 @@
 <script setup>
 definePageMeta({
   auth: {
-    unauthenticatedOnly: true,
+    unauthenticatedOnly: false,
     
   },
 })

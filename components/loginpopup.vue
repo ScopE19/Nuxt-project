@@ -33,7 +33,7 @@
   <script setup lang="ts">
   definePageMeta({
     auth: {
-      unauthenticatedOnly: true,
+      unauthenticatedOnly: false,
     
     },
   })
@@ -42,7 +42,7 @@
   const showPopup = ref(false)
   
   function confirmSignIn() {
-    signIn('github', { callbackUrl: '/login' })
+    signIn('github', { callbackUrl: '/' })
     showPopup.value = false
   }
   </script>
