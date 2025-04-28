@@ -34,7 +34,7 @@
   definePageMeta({
     auth: {
       unauthenticatedOnly: true,
-      navigateAuthenticatedTo: '/Lab6',
+    
     },
   })
   

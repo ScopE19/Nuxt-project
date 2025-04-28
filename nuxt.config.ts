@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       tailwindcss(),
   ]},
   auth: {
-    globalAppMiddleware: true,
+    globalAppMiddleware: false,
   },
 
   runtimeConfig: {

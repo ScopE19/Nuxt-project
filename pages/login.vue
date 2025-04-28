@@ -7,7 +7,7 @@
 definePageMeta({
   auth: {
     unauthenticatedOnly: true,
-    globalMiddleware: true,
+    
   },
 })
 </script>
