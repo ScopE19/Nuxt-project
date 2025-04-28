@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   ]},
   auth: {
     globalAppMiddleware: false,
-    baseURL: process.env.BASE_URL,
+    baseURL: 'https://scope191337.netlify.app',
   },
 
   runtimeConfig: {
