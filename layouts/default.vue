@@ -1,6 +1,6 @@
 
-<script setup>
-import{ref} from 'vue'
+<script setup lang="ts">
+import {ref} from 'vue'
 import LoginPopup from '~/components/loginpopup.vue'
 
 useHead({
@@ -22,9 +22,14 @@ const showPopup = ref(false)
 const popupMessage = ref('')
 const switch_burger = () => {burger.value = !burger.value}
 
-const { signOut, status} = useAuth()
+const { signOut, status } = useAuth()
 const log_check = computed(() => status.value === 'authenticated')
-const data = await useFetch('/api/me')
+const {data} = await useFetch('/api/me')
+
+onMounted(() => {
+  console.log(process.env.GITHUB_ID),
+  console.log(process.env.GITHUB_SECRET)})
+
 </script>
 
 <template class="bg-red-500">
@@ -58,6 +63,7 @@ const data = await useFetch('/api/me')
                   
                 }
                   }" class="font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab6</a>
+                <NuxtLink to = "/Lab7" class = "font-bold my-auto p-2 hover:bg-gray-500 hover:scale-125 max-[480px]:w-full max-[480px]:border-b-2 max-[480px]:border-black max-[480px]:text-center border-2">Lab7</NuxtLink>
               </div>
             </div>
             
@@ -97,6 +103,3 @@ const data = await useFetch('/api/me')
     </footer>
 </template>
 
-<style scoped>
-
-</style>

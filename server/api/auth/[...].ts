@@ -3,15 +3,18 @@ import GithubProvider from 'next-auth/providers/github'
 
 const runtimeConfig = useRuntimeConfig()
 console.log('Github Client ID:', runtimeConfig.public.GITHUB_CLIENT_ID)
-console.log('Github Redirect URI:', runtimeConfig.public.GITHUB_REDIRECT_URI)
+console.log('Github Redirect URI:', runtimeConfig.public.GITHUB_REDIRECT_ID)
+
 
 
 export default NuxtAuthHandler({
     pages: {
-        signIn: '/'},
+        signIn: '/login',
+    },
 
+    
     providers: [
         GithubProvider.default({
-            clientId: process.env.GITHUB_ID,
-            clientSecret: process.env.GITHUB_SECRET,
+            clientId: runtimeConfig.public.GITHUB_CLIENT_ID,
+            clientSecret: runtimeConfig.public.GITHUB_CLIENT_SECRET
 })],})

@@ -7,6 +7,6 @@
 
 <script setup lang="ts">
 definePageMeta({
-  middleware: 'sidebase-auth' // Apply the auth middleware here
+  middleware: 'sidebase-auth'
 })
 </script>

@@ -16,7 +16,7 @@
         <div class="bg-white p-8 rounded-xl shadow-xl text-center">
             <div @click="confirmSignIn" class = "flex flex-col p-4 rounded-lg">
         <button class = 'rounded-xl bg-green-500 min-w-[250px] h-[60px] text-black font-bold flex flex-row items-center justify-center hover:text-yellow-500'>
-        <img src="assets/images/git.png" class="mr-2 bg-transparent w-10 h-10">Sign in with GitHub</button>
+        <img src="/assets/images/git.png" class="mr-2 bg-transparent w-10 h-10">Sign in with GitHub</button>
              </div>   
         
           <button
@@ -34,7 +34,7 @@
   definePageMeta({
     auth: {
       unauthenticatedOnly: true,
-      globalMiddleware: true,
+      navigateAuthenticatedTo: '/Lab6',
     },
   })
   

@@ -6,21 +6,24 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: ['@sidebase/nuxt-auth'],
+  modules: [
+    '@sidebase/nuxt-auth',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate'
+  ],
   vite: {
     plugins: [
       tailwindcss(),
   ]},
   auth: {
-    baseURL: process.env.AUTH_ORIGIN
+    globalAppMiddleware: true,
   },
-  app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
-  },
+
   runtimeConfig: {
     public: {
       GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+      GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+      
     },
-    GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET
   }
 })
